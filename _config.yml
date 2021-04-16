@@ -32,6 +32,9 @@ timezone: Europe/Moscow
 # gem theme is not used on this site
 #theme: minima
 strict_front_matter: true
+liquid:
+    error_mode: strict
+    strict_filters: true
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
