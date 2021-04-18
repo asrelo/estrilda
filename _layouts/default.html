@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="{{ site.xmlns | default: "http://www.w3.org/1999/xhtml" }}" lang="{{ page.lang | default: site.lang | default: "en" }}" dir="ltr">
-	{%- include head.html -%}
+    <head>
+        <meta charset="{{ page.encoding | default: "utf-8" }}">
+		{%- if page.url %}
+			<base href="{{ page.url }}" />
+		{%- endif %}
+		{%- include html_head_contents.html -%}
+    </head>
 	<body>
 		{%- include header.html -%}
 		<main class="page-content" aria-label="Content">
