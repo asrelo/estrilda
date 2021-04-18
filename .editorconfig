@@ -15,6 +15,13 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
 
+# apparently CSS gets converted by Jekyll
+[*.css]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
 # Jekyll does not process HTML even to remove spaces :facepalm:
 [*.{htm,html}]
 indent_style = tab
@@ -27,6 +34,12 @@ indent_style = tab
 trim_trailing_whitespace = true
 
 [*.json]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{sass,scss}]
 charset = utf-8
 indent_style = space
 indent_size = 4
