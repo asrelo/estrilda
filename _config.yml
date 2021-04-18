@@ -27,6 +27,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  asrelo
 
 # Build settings
+collections_dir: content
 # a value from the IANA Time Zone Database:
 timezone: Europe/Moscow
 # gem theme is not used on this site
