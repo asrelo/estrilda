@@ -60,6 +60,7 @@ plugins:
 #     - vendor/gems/
 #     - vendor/ruby/
 exclude:
+    - dev_notes/
     - minima-LICENSE.txt
     - minima-README.md
     - LICENSE.txt

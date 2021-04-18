@@ -1,6 +1,9 @@
 # Initially assembled from templates from https://github.com/toptal/gitignore
 # and tweaked by asrelo
 
+### custom ###
+/dev_notes/
+
 ### Jekyll ###
 _site/
 .sass-cache/
