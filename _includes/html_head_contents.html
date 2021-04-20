@@ -1,6 +1,16 @@
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 {%- seo -%}
+{%- if site.locale -%}
+	<meta property="og:locale" content="{{ site.locale }}">
+{%- endif -%}
+<meta property="og:type" content="website">
+{%- if site.logo -%}
+	<meta property="og:image" content="{{ site.logo | absolute_url }}">
+	<meta property="og:image:type" content="image/{{ site.logo | split: "." | last }}">
+	<meta property="og:image:alt" content="{{ site.title | escape }}">
+{%- endif -%}
+{% if site.license_link %}
+	<link rel="license" href="{{ site.license_link }}" />
+{% endif %}
 <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

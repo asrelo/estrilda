@@ -2,11 +2,13 @@
 <html xmlns="{{ site.xmlns | default: "http://www.w3.org/1999/xhtml" }}" lang="{{ page.lang | default: site.lang | default: "en" }}" dir="ltr">
     <head>
         <meta charset="{{ page.encoding | default: "utf-8" }}">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		{%- if page.url %}
 			<base href="{{ page.url }}" />
 		{%- endif %}
 		{%- include content_security_policy.data -%}
 		<meta http-equiv="content-security-policy" content="{{ content_security_policy_string | default: "default-src 'none'; script-src 'self'; connect-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'" }}" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		{%- include html_head_contents.html -%}
     </head>
 	<body>
