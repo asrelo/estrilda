@@ -12,3 +12,6 @@ This software uses externally the following software:
 **Renderable contents** is all the site's payload content, including all articles, posts, books, etc. as well as images and other media files exclusively linked with them.
 
 The site design is based on the Jekyll theme `minima` ver. `2.5.1`, which has the MIT license and can be found at [GitHub]( https://github.com/jekyll/minima ). Text of the `minima` license is provided int the `minima-LICENSE.txt` file within the repository root directory.
+
+The site explicitly uses the following licensed fonts:
+* **Roboto** (`/fonts/Roboto-LICENSE.txt`).

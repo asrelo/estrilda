@@ -1,9 +1,10 @@
 {%- capture content_security_policy_string -%}
 default-src 'none';
 img-src 'self';
-font-src 'self';
+font-src 'self' cdn.jsdelivr.net;
 style-src 'self' 'unsafe-inline';
-script-src 'self' {% if jekyll.environment == "development" %}'unsafe-eval'{% endif %};
+script-src 'self' 'unsafe-inline' polyfill.io cdn.jsdelivr.net {% if jekyll.environment == "development" %}'unsafe-eval'{% endif %};
 {% if jekyll.environment == "development" %}connect-src *;{% endif %}
 prefetch-src 'self';
+manifest-src 'self';
 {%- endcapture -%}
