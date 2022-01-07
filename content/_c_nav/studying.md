@@ -5,4 +5,4 @@ title: Учебные материалы
 tags: navpage studying
 ---
 
-{% include nav_page_contents.md collection=site.c_studying %}
+{% include nav_page_contents.md collection=site.c_studying up_url="/" %}
