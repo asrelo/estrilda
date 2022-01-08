@@ -2,6 +2,7 @@
 layout: default
 title: Решение несобственных интегралов
 tags: integrals improper_integrals math_notes studying
+published: false
 ---
 
 # Несобственные интегралы
