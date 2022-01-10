@@ -30,6 +30,9 @@ collections:
     c_studying_math_notes:
         output: true
         permalink: /studying/math-notes/:name
+    c_studying_statistics_notes:
+        output: true
+        permalink: /studying/statistics-notes/:name
 
 # Build settings
 collections_dir: content
