@@ -27,6 +27,9 @@ collections:
     c_studying:
         output: true
         permalink: /studying/:name
+    c_studying_electrics_notes:
+        output: true
+        permalink: /studying/electrics-notes/:name
     c_studying_math_notes:
         output: true
         permalink: /studying/math-notes/:name
